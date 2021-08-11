@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Daily Journal</title>
+</head>
+
+<body>
+    <header> Daily Journal </header>
+    <main class="container">
+
+        <article>
+            <form class="entryForm">
+                <fieldset>
+                    <label for="entryDate">Date:</label>
+                    <input type="date" name="entryDate" class="entryForm__date">
+                </fieldset>
+            </form>
+
+            <section>
+                <form>
+                    <fieldset>
+                        <label for="dateOfEntry">Date of Entry:</label>
+                        <input type="date" name="dateOfEntry" class="dateOfEntry">
+                    </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <fieldset>
+                <label for="concepts">Concepts Covered:</label>
+                <input type="text" name="concepts" class="conceptsCovered">
+            </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                <label for="journalEntry">Journal Entry:</label>
+                <textarea name="journalEntry" cols="20" rows="3"></textarea>
+            </fieldset>
+            </section>
+
+            <section>
+                <form>
+                <fieldset>
+                    <label for="mood">Mood For The Day:</label>
+                    <select id="moodList">
+                        <option>--Choose Mood--</option>
+                        <option>Happy</option>
+                        <option>Sad</option>
+                        <option>Confused</option>
+                        <option>Frustrated</option>
+                    </select>
+                </fieldset>
+                </form>
+            </section>
+
+            <section>
+                <input type="button" value="Record Journal Entry">
+            </section>
+        </article>
+
+        <article id="entries"></article>
+
+    </main>
+</body>
+
+</html>
